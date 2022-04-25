@@ -31,4 +31,4 @@ jobs:
       - name: Create a PR
         if: ${{ steps.pull_request_exists.outputs.count == 0 }}
         run: |
-          gh pr create -B develop --head master "Update develop from master" -b ""
+          gh pr create -B develop --head master -t "Update develop from master" -b ""
